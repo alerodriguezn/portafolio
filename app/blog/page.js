@@ -9,6 +9,7 @@ async function getData() {
 const BlogPage = async () => {
   const posts = await getData();
   return (
+
     <main className="mt-14">
       <h2 className="text-white font-bold text-2xl border-b border-zinc-600 pb-2">Blog</h2>
       <ListPosts posts={posts} />

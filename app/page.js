@@ -4,6 +4,7 @@ import photo from '@/public/img/photo2.jpeg'
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 
 export default function Home() {
+ 
   return (
     <>
       <main className="flex mt-14 justify-center items-center">
