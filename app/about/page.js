@@ -14,9 +14,9 @@ const AboutPage = () => {
           I am focused on learning technologies like <span className="text-[#d83bd2] font-bold">NextJS, Remix Run and Astro</span>.
         </p>
         <div className='w-1/2 flex gap-4 justify-center items-center'>
-          <Image src={reactLogo} width={50} height={50} className='object-cover' />
-          <Image src={astroLogo} width={50} height={50} className='object-cover'  />
-          <Image src={nextLogo}  width={50} height={50} className='object-cover' />
+          <Image src={reactLogo} width={50} height={50} alt='React' />
+          <Image src={astroLogo} width={50} height={50} alt='Astro'  />
+          <Image src={nextLogo}  width={50} height={50} alt='NextJS' />
         </div>
       </div>
 
