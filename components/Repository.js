@@ -5,7 +5,7 @@ const Repository = ({ repo }) => {
   return (
     <div className="mb-8 flex flex-col space-y-2">
       <Link href={`https://github.com/alerodriguezn/${name}`} className="flex items-center gap-2" target="_blank">
-        <h4 className="text-white font-bold">{name}</h4>
+        <h4 className="text-white font-bold hover:text-gray-400">{name}</h4>
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="none"
@@ -27,7 +27,7 @@ const Repository = ({ repo }) => {
         {topics.map((topic) => (
           <li
             key={topic}
-            className="text-gray-400 text-sm bg-slate-900 rounded-lg py-1 px-2"
+            className="text-blue-500 text-sm bg-slate-900 rounded-lg py-1 px-2"
           >
             {topic}
           </li>
