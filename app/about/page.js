@@ -1,9 +1,11 @@
+
 import Image from "next/image";
 import axios from "axios";
 import reactLogo from "@/public/img/react.png";
 import astroLogo from "@/public/img/astro.png";
 import nextLogo from "@/public/img/next.png";
 import ListRepos from "@/components/ListRepos";
+
 
 async function getRepos() {
   const { data } = await axios("http://localhost:3000/api/repos", {

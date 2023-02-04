@@ -1,8 +1,9 @@
-import { Inter } from '@next/font/google'
-import './globals.css'
-import Navbar from '@/components/navbar'
+import { Inter } from "@next/font/google";
+import "./globals.css";
+import Navbar from "@/components/navbar";
 
-const inter = Inter({ subsets: ['latin'] })
+
+const inter = Inter({ subsets: ["latin"] });
 
 export default function RootLayout({ children }) {
   return (
@@ -12,10 +13,10 @@ export default function RootLayout({ children }) {
         head.js. Find out more at https://beta.nextjs.org/docs/api-reference/file-conventions/head
       */}
       <head />
-      <body className='bg-[#111010] max-w-2xl mx-auto'>
-        <Navbar/>
+      <body className="bg-[#111010] max-w-2xl px-2 mx-auto">
+        <Navbar />
         {children}
       </body>
     </html>
-  )
+  );
 }
