@@ -1,10 +1,21 @@
 import Image from "next/image"
 import Link from "next/link"
+import axios from "axios";
+import ListRepos from "@/components/ListRepos";
 import photo from '@/public/img/photo2.jpeg'
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 
-export default function Home() {
- 
+async function getRepos() {
+  const { data } = await axios("http://localhost:3000/api/repos", {
+    cache: "no-store",
+  });
+  return data;
+}
+
+export default async function Home() {
+
+  const repos = await getRepos();
+
   return (
     <>
       <main className="flex mt-14 justify-center items-center">
@@ -27,6 +38,10 @@ export default function Home() {
           <Link className="text-zinc-200 flex gap-2  items-center hover:text-white" href="https://github.com/alerodriguezn" target={'_blank'} ><FaGithub/> Check my repositories</Link>
         </div> 
       </section>
+     
+      <ListRepos repos={repos} />
+      
+      
 
     </>
   )
