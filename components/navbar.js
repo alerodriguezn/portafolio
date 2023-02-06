@@ -13,7 +13,6 @@ const Navbar = () => {
           <Link className={`text-white font-bold rounded-md px-2 hover:bg-zinc-800 ${pathname === "/" ? 'text-gray-500': ''} `} href={'#'}>Home</Link>
           <Link className={`text-white font-bold rounded-md px-2 hover:bg-zinc-800 ${pathname === "/about" ? 'text-gray-500': ''} `} href={'/about'}>About</Link>
           <Link className={`text-white font-bold rounded-md px-2 hover:bg-zinc-800 ${pathname === "/blog" ? 'text-gray-500': ''} `} href={'/blog'}>Blog</Link>
-          <Link className={`text-white font-bold rounded-md px-2 hover:bg-zinc-800 ${pathname === "/contact" ? 'text-gray-500': ''} `} href={'#'}>Contact</Link>
         </div>
 
 

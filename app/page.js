@@ -35,7 +35,7 @@ export default async function Home() {
       <section className="mt-5">
         <div className="p-2 flex gap-2 justify-around">
           <Link className="text-zinc-200 flex gap-2  items-center hover:text-white" href="https://twitter.com/alej0rod" target={'_blank'} ><FaTwitter/> Follow me on Twitter</Link>
-          <Link className="text-zinc-200 flex gap-2  items-center hover:text-white" href="https://github.com/alerodriguezn" target={'_blank'} ><FaGithub/> Check my repositories</Link>
+          <Link className="text-zinc-200 flex gap-2  items-center hover:text-white" href="https://github.com/alerodriguezn" target={'_blank'} ><FaGithub/> Check all my repositories</Link>
         </div> 
       </section>
      
