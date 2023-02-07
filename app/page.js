@@ -6,7 +6,7 @@ import photo from '@/public/img/photo2.jpeg'
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 
 async function getRepos() {
-  const { data } = await axios(`${process.env.NEXT_URL}/api/repos`, {
+  const { data } = await axios(`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/repos`, {
     cache: "no-store",
   });
   return data;
