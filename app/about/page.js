@@ -8,7 +8,7 @@ import ListRepos from "@/components/ListRepos";
 
 
 async function getRepos() {
-  const { data } = await axios(`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/repos`, {
+  const { data } = await axios(`https://${process.env.VERCEL_URL}/api/repos`, {
     cache: "no-store",
   });
   return data;
