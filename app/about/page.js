@@ -8,7 +8,7 @@ import ListRepos from "@/components/ListRepos";
 
 
 async function getRepos() {
-  const { data } = await axios(`/api/repos`, {
+  const { data } = await axios(`${process.env.NEXT_PUBLIC_URL}`, {
     cache: "no-store",
   });
   return data;
