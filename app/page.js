@@ -1,20 +1,18 @@
 import Image from "next/image"
 import Link from "next/link"
-import axios from "axios";
 import ListRepos from "@/components/ListRepos";
+import { getRepos } from "@/lib/repos";
 import photo from '@/public/img/photo2.jpeg'
 import { FaTwitter, FaGithub } from 'react-icons/fa';
 
-async function getRepos() {
-  const { data } = await axios(`${process.env.NEXT_URL}/api/repos`, {
-    cache: "no-store",
-  });
-  return data;
-}
-
 export default async function Home() {
-
-  const repos = await getRepos();
+  
+  let repos;
+  try {
+    repos = await getRepos()
+  } catch (error) {
+    console.log(error)
+  }
 
   return (
     <>
@@ -38,11 +36,9 @@ export default async function Home() {
           <Link className="text-zinc-200 flex gap-2  items-center hover:text-white" href="https://github.com/alerodriguezn" target={'_blank'} ><FaGithub/> Check all my repositories</Link>
         </div> 
       </section>
-     
-      <ListRepos repos={repos} />
-      
-      
 
+      <ListRepos repos={repos}/>
+  
     </>
   )
 }

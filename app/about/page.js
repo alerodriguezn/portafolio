@@ -1,21 +1,11 @@
-
 import Image from "next/image";
-import axios from "axios";
 import reactLogo from "@/public/img/react.png";
 import astroLogo from "@/public/img/astro.png";
 import nextLogo from "@/public/img/next.png";
-import ListRepos from "@/components/ListRepos";
 
-
-async function getRepos() {
-  const { data } = await axios(`${process.env.NEXT_URL}/api/repos`, {
-    cache: "no-store",
-  });
-  return data;
-}
 
 const AboutPage = async () => {
-  const repos = await getRepos();
+
   return (
     <>
       <main className="mt-14 border-b  border-zinc-700 pb-4 shadow-lg">
@@ -40,7 +30,6 @@ const AboutPage = async () => {
           </div>
         </div>
       </main>
-      <ListRepos repos={repos} />
     </>
   );
 };
