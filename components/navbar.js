@@ -2,7 +2,7 @@
 import { usePathname } from 'next/navigation';
 import Link from "next/link"
 //TODO: change Link List
-const Navbar = () => {
+export const Navbar = () => {
   const pathname = usePathname();
   return (
     <header className="mt-8 flex flex-col justify-center items-center md:flex-row md:justify-between w-full">
@@ -17,4 +17,4 @@ const Navbar = () => {
   )
 }
 
-export default Navbar
+
