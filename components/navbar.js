@@ -3,6 +3,7 @@
 import { usePathname } from 'next/navigation';
 import Link from "next/link"
 
+
 //TODO: change Link List
 const Navbar = () => {
   const pathname = usePathname();
