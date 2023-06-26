@@ -41,7 +41,7 @@ export default async function Home() {
     <>
       <main className="flex justify-center mt-14 items-center">
         <div className="w-1/2 ">
-            <p className="text-left font-medium text-white">Hello, I'm Alejandro Rodriguez. I'm a <span className="text-[#6bd968]">Computer Engineering Student</span> and passionate about <span className="text-[#fecc1b]">frontend and backend</span> development.  </p>
+            <p className="text-left font-medium text-white">Hello, I&apos;m Alejandro Rodriguez. I&apos;m a <span className="text-[#6bd968]">Computer Engineering Student</span> and passionate about <span className="text-[#fecc1b]">frontend and backend</span> development.  </p>
           </div>
           <div className="w-1/2 flex justify-center " >
             <Image
