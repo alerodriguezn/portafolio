@@ -1,6 +1,6 @@
 import Image from "next/image";
 import reactLogo from "@/public/img/react.png";
-import astroLogo from "@/public/img/astro.png";
+import rustLogo from "@/public/img/rust.png";
 import nextLogo from "@/public/img/next.png";
 
 
@@ -19,13 +19,13 @@ const AboutPage = async () => {
             and I am currently studying computer engineering at TEC. I am
             focused on learning technologies like{" "}
             <span className="text-[#d83bd2] font-bold">
-              NextJS, Remix Run and Astro
+              React, NextJS and Rust
             </span>
             .
           </p>
           <div className="w-1/2 flex gap-4 justify-center items-center">
             <Image src={reactLogo} width={50} height={50} alt="React" />
-            <Image src={astroLogo} width={50} height={50} alt="Astro" />
+            <Image src={rustLogo} width={70} height={70} alt="Rust" />
             <Image src={nextLogo} width={50} height={50} alt="NextJS" />
           </div>
         </div>

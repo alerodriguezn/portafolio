@@ -1,7 +1,7 @@
-
 import { Octokit } from 'octokit';
+import { NextResponse } from 'next/server';
 
-export async function getRepos() {
+export async function GET() {
     const octokit = new Octokit({
       auth: process.env.NEXT_PUBLIC_GITHUB_TOKEN,
     });
@@ -27,5 +27,5 @@ export async function getRepos() {
       return { name, description, topics };
     });
   
-    return reposInfo
+    return NextResponse.json(reposInfo);
 }
