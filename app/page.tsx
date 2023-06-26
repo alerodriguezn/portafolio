@@ -24,7 +24,6 @@ async function getRepos(): Promise<RepositoryProps[]> {
     if (!data) {
       throw new Error('Failed to fetch data');
     }
-
     return data;
   } catch (error) {
     console.error('Error fetching data:', error);
@@ -35,7 +34,6 @@ async function getRepos(): Promise<RepositoryProps[]> {
 export default async function Home() {
 
   const repos = await getRepos()
-
 
   return (
     <>
