@@ -18,7 +18,7 @@ interface RepositoryProps {
 
 async function getRepos(): Promise<RepositoryProps[]> {
   try {
-    const res = await fetch('http://localhost:3000/api/repos', { cache: 'no-store' });
+    const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/repos`, { cache: 'no-store' });
     const data = await res.json();
 
     if (!data) {
