@@ -19,11 +19,17 @@ interface RepositoryProps {
 async function getRepos(): Promise<RepositoryProps[]> {
   try {
     const res = await fetch(`${process.env.NEXT_PUBLIC_URL}/api/repos`);
+
+    if (!res.ok) {
+      throw new Error('Failed to fetch data');
+    }
+
     const data = await res.json();
 
     if (!data) {
-      throw new Error('Failed to fetch data');
+      throw new Error('Failed to parse JSON data');
     }
+
     return data;
   } catch (error) {
     console.error(`${process.env.NEXT_PUBLIC_URL}/api/repos`, error);
