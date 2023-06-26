@@ -26,7 +26,7 @@ async function getRepos(): Promise<RepositoryProps[]> {
     }
     return data;
   } catch (error) {
-    console.error('Error fetching data:', error);
+    console.error(`${process.env.NEXT_PUBLIC_URL}/api/repos`, error);
     throw new Error('Error fetching data');
   }
 }
