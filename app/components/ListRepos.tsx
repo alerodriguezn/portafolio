@@ -15,7 +15,7 @@ const ListRepos: React.FC<RepositoryProps> = ({ repos }) => {
     return (
         <section className="mt-8">
             <h2 className="text-white font-bold text-2xl mb-6 flex items-center gap-2"><FaGithub className="md:mr-0 mr-1" />GitHub Projects</h2>
-            {repos.map(repo => (
+            {repos?.map(repo => (
                 <Repository key={repo.name} repo={repo} />
             ))}
 
