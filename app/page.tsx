@@ -32,7 +32,7 @@ async function getRepos(): Promise<RepositoryProps[]> {
 
     return data;
   } catch (error) {
-    console.error(`https://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/repos`, error);
+    console.error(`http://${process.env.NEXT_PUBLIC_VERCEL_URL}/api/repos`, error);
     throw new Error('Error fetching data');
   }
 }
