@@ -7,6 +7,7 @@
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
   --background-color: 12, 12, 12;
+  --text-color: 255, 255, 255;
 }
 
 
@@ -15,4 +16,8 @@ body {
   color: rgb(var(--foreground-rgb));
   background-color: rgb(var(--background-color));
 
+}
+
+p, h1, h2{
+  color: rgb(var(--text-color));
 }
