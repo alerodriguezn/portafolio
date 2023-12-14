@@ -1,3 +1,6 @@
+export const dynamic = 'force-dynamic'
+export const revalidate = 0
+
 import Image from "next/image";
 import { Navbar } from "../components/Navbar";
 import photo from "@/public/img/photo.jpeg";
@@ -5,7 +8,8 @@ import Link from "next/link";
 import { Github } from "../components/logos/github";
 import { Linkedin } from "../components/logos/linkedin";
 import { X } from "@/components/logos/x";
-import { ProjectCard } from "@/components/ProjectCard";
+import { ProjectsGrid } from "@/repos/components/ProjectsGrid";
+
 
 export default function Home() {
   return (
@@ -51,17 +55,9 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="w-full">
+        <section className="w-[50rem]">
           <h2 className="text-left font-bold text-[#FECC1B]">Projects</h2>
-          <div className="grid grid-cols-3 gap-2 mt-2">
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
-            <ProjectCard/>
-
-
-          </div>
+          <ProjectsGrid/>
         </section>
       </main>
     </>
