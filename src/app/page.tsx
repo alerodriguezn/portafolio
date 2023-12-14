@@ -5,6 +5,7 @@ import Link from "next/link";
 import { Github } from "../components/logos/github";
 import { Linkedin } from "../components/logos/linkedin";
 import { X } from "@/components/logos/x";
+import { ProjectCard } from "@/components/ProjectCard";
 
 export default function Home() {
   return (
@@ -18,7 +19,7 @@ export default function Home() {
         <Navbar />
       </header>
       <main className="w-3/4 flex justify-center items-center mt-4 flex-col">
-        <div className="w-full sm:w-2/3 flex flex-col justify-center items-center border-4 rounded-md border-slate-900">
+        <div className="w-full sm:w-2/3 flex flex-col justify-center items-center ">
           <div className="flex p-2">
             <div className="w-3/4 flex justify-center items-center">
               <p className="text-sm text-justify">
@@ -49,6 +50,19 @@ export default function Home() {
             </Link>
           </div>
         </div>
+
+        <section className="w-full">
+          <h2 className="text-left font-bold text-[#FECC1B]">Projects</h2>
+          <div className="grid grid-cols-3 gap-2 mt-2">
+            <ProjectCard/>
+            <ProjectCard/>
+            <ProjectCard/>
+            <ProjectCard/>
+            <ProjectCard/>
+
+
+          </div>
+        </section>
       </main>
     </>
   );
