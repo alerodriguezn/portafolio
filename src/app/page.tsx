@@ -1,5 +1,5 @@
-export const dynamic = 'force-dynamic'
-export const revalidate = 0
+export const dynamic = "force-dynamic";
+export const revalidate = 0;
 
 import Image from "next/image";
 import { Navbar } from "../components/Navbar";
@@ -9,7 +9,6 @@ import { Github } from "../components/logos/github";
 import { Linkedin } from "../components/logos/linkedin";
 import { X } from "@/components/logos/x";
 import { ProjectsGrid } from "@/repos/components/ProjectsGrid";
-
 
 export default function Home() {
   return (
@@ -22,27 +21,23 @@ export default function Home() {
         </h2>
         <Navbar />
       </header>
-      <main className="w-3/4 flex justify-center items-center mt-4 flex-col">
+      <main className="md:w-3/4 w-[85%] flex justify-center items-center mt-4 flex-col">
         <div className="w-full sm:w-2/3 flex flex-col justify-center items-center ">
-          <div className="flex p-2">
-            <div className="w-3/4 flex justify-center items-center">
-              <p className="text-sm text-left">
-                Prospective Computer Engineering student with expertise in
-                frontend and backend development. Demonstrated skills through
-                hands-on projects.
-              </p>
-            </div>
-            <div className="w-1/2 flex justify-center items-center">
-              <Image
-                src={photo}
-                alt="profile photo"
-                width={75}
-                height={75}
-                className="rounded-full object-cover contrast-100"
-              />
-            </div>
+          <div className="w-3/4  flex md:flex-row flex-col justify-center items-center mb-2 gap-4 ">
+            <p className="text-sm md:text-justify text-center">
+              Prospective Computer Engineering student with expertise in
+              frontend and backend development. Demonstrated skills through
+              hands-on projects.
+            </p>
+            <Image
+              src={photo}
+              alt="profile photo"
+              width={75}
+              height={75}
+              className="rounded-full object-cover contrast-100"
+            />
           </div>
-          <div className="w-full flex justify-center gap-4 mb-2">
+          <div className="w-full flex justify-center gap-4 my-2">
             <Link href="https://github.com/alerodriguezn">
               <Github />
             </Link>
@@ -55,9 +50,9 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="w-[90%]">
+        <section className="md:w-[90%]">
           <h2 className="text-left font-bold text-[#FECC1B]">Projects</h2>
-          <ProjectsGrid/>
+          <ProjectsGrid />
         </section>
       </main>
     </>
