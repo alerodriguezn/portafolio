@@ -21,7 +21,7 @@ export const ProjectCard = ({ name, description = null, topics }: Props ) => {
         height={300}
         className="rounded-sm"
       />
-      <div className="w-full grid grid-cols-3  gap-2 mt-2 text-[#FECC1B] font-medium text-[0.65rem] p-[0.25rem]">
+      <div className="w-full grid sm:grid-cols-3 grid-cols-2  gap-2 mt-2 text-[#FECC1B] font-medium text-[0.65rem] p-[0.25rem]">
         {
           topics?.map((topic) => {
             return <span key={topic} className="rounded-md bg-zinc-800 px-1 py-[0.15rem] m-0 text-center">{topic}</span>

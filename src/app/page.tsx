@@ -26,7 +26,7 @@ export default function Home() {
         <div className="w-full sm:w-2/3 flex flex-col justify-center items-center ">
           <div className="flex p-2">
             <div className="w-3/4 flex justify-center items-center">
-              <p className="text-sm text-justify">
+              <p className="text-sm text-left">
                 Prospective Computer Engineering student with expertise in
                 frontend and backend development. Demonstrated skills through
                 hands-on projects.
@@ -55,7 +55,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="w-[50rem]">
+        <section className="w-[90%]">
           <h2 className="text-left font-bold text-[#FECC1B]">Projects</h2>
           <ProjectsGrid/>
         </section>
