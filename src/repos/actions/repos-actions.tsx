@@ -1,3 +1,4 @@
+'use server';
 import { Octokit } from "@octokit/core";
 
 export const getRepos = async () => {
