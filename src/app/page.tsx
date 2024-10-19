@@ -51,7 +51,7 @@ export default function Home() {
         </div>
 
         <section className="md:w-[90%]">
-          <h2 className="text-left font-bold text-[#FECC1B]">Projects</h2>
+          <h2 className="text-left font-bold text-[#FECC1B]">My Projects</h2>
           <ProjectsGrid />
         </section>
       </main>
