@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import quioscoProject from "@/public/img/quiosco.jpg";
+
 import Link from "next/link";
 import { Github } from "../../components/logos/github";
 
@@ -15,7 +15,7 @@ export const ProjectCard = ({ name, description = null, topics }: Props ) => {
   return (
     <div className="flex flex-col items-center border-2 rounded-lg border-zinc-800 p-3 ">
       <Image
-        src={quioscoProject}
+        src={`/img/quiosco.jpg`}
         alt="Kiosk Project"
         width={300}
         height={300}
