@@ -3,7 +3,7 @@ export const revalidate = 0;
 
 import Image from "next/image";
 import { Navbar } from "../components/Navbar";
-import photo from "@/public/img/photo.jpeg";
+import photo from "../../public/img/photo.jpeg";
 import Link from "next/link";
 import { Github } from "../components/logos/github";
 import { Linkedin } from "../components/logos/linkedin";
