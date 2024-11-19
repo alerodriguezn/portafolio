@@ -16,7 +16,7 @@ export default function Home() {
       <header className="flex flex-col justify-center items-center mt-4">
         <h2 className="text-[#FECC1B] font-bold text-xl mb-3 md:mb-0">
           {" "}
-          <span className="text-[##6bd968]">{"{ "}</span> Ale Rodríguez 2
+          <span className="text-[##6bd968]">{"{ "}</span> Ale Rodríguez 3
           <span className="text-[##6bd968]">{" }"}</span>
         </h2>
         <Navbar />
