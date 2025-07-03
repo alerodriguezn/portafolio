@@ -1,8 +1,13 @@
 import React from "react";
 
-export const X = () => {
+interface Props {
+  className?: string;
+}
+
+export const X = ({ className }: Props) => {
   return (
     <svg
+      className={className}
       xmlns="http://www.w3.org/2000/svg"
       width="20"
       height="20"

@@ -74,7 +74,7 @@ export const ProjectCard = ({ repo }: ProjectCardProps) => {
             href={`https://github.com/alerodriguezn/${name || ""}`}
             className="w-full flex items-center justify-center gap-2 bg-[#FECC1B] text-black px-4 py-2 rounded-lg font-semibold text-sm hover:bg-[#6bd968] transition-colors duration-300 group/btn"
           >
-            <Github color="#000" />
+            <Github/>
             <span className="group-hover/btn:scale-105 transition-transform duration-200">
               View Code
             </span>

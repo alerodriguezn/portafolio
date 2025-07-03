@@ -11,7 +11,7 @@ export function About() {
         <div className="grid md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <p className="text-lg text-gray-300 leading-relaxed">
-              I'm a prospective Computer Engineering student with a strong foundation in 
+              I&apos;m a prospective Computer Engineering student with a strong foundation in 
               both frontend and backend development. My journey in technology started 
               with curiosity and has evolved into a passion for creating meaningful 
               digital experiences.
