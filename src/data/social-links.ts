@@ -16,7 +16,7 @@ export const socialLinks: SocialLink[] = [
   },
   {
     name: "Twitter",
-    url: "https://twitter.com/alerodriguezn", 
+    url: "https://x.com/alej0rod", 
     icon: X
   }
 ]; 
